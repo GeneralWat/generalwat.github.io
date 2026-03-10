@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My gamedevelopment portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/prismjs@1/themes/prism-tomorrow.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-csharp.min.js"></script>
 </head>
 <body>
     <header>
@@ -23,6 +26,13 @@
                     frameborder="0"
                     allowfullscreen
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+            <pre><code class="language-csharp">
+            // Example: Player movement script
+            void Update() {
+                float move = Input.GetAxis("Horizontal");
+                transform.Translate(Vector3.right * move * speed * Time.deltaTime);
+            }
+            </code></pre>
         </div>
     </section>
 
@@ -32,7 +42,7 @@
     </section>
 
     <footer>
-        <p>© 2025 Isak Borgemo — Kontakt: <a href="mailto:isak_borgemo@hotmail.com">isak_borgemo@hotmail.com</a></p>
+        <p>ï¿½ 2025 Isak Borgemo ï¿½ Kontakt: <a href="mailto:isak_borgemo@hotmail.com">isak_borgemo@hotmail.com</a></p>
     </footer>
 </body>
 </html>
